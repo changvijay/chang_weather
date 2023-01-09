@@ -1,0 +1,277 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+.i{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+    border-radius: 50%;
+}
+.i:hover{
+    background-color: rgb(247, 90, 116);
+}
+
+.bar {
+    margin-bottom: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    color: #fff;
+    float: left;
+    width: 80px;
+    height: 80vh;
+    margin: 30px 10px 10px 30px;
+    border-radius: 5px 80px 5px;
+    border: solid 5px rgb(32, 32, 32);
+    background-color: rgb(0, 0, 0);
+}
+
+.tem {
+    border-radius: 0px 20px 100px 50px;
+    transform: rotate(12deg);
+    position: absolute;
+    top: -60px;
+    right: 0;
+    background-color: rgb(238, 9, 85);
+    width: 600px;
+    height: 250px;
+}
+.tempmain{
+    overflow: hidden;
+    width: 69%;
+    height: 79vh;
+    position: absolute;
+    top: 69px;
+    right: 1px;
+}
+
+#h1{
+    position: absolute;
+    top: 120px;
+    left: 5px;
+    transform: rotate(-12deg);
+    background-color: rgb(238, 10, 86);
+    border: none;
+    font-size: 2.5rem;
+}
+.cloud{
+    transform: rotate(-12deg);
+    position: relative;
+    background: white;
+    top: 250px;
+    width: 280px;
+    height: 60px;
+    border-radius: 100px;
+       
+}
+.cloud::before{
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 40px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    box-shadow: 90px 0 0 30px #fff;
+}
+.sun{
+    position: absolute;
+    top:170px;
+    width: 150px;
+    height: 150px;
+    background-color:yellow;
+    border-radius: 50%;
+}
+.drop1{
+    position: absolute;
+    background: skyblue;
+    top: 350px;
+    left: 80px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.drop2{
+    position: absolute;
+    background: skyblue;
+    top: 350px;
+    left: 120px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.drop3{
+    position: absolute;
+    background: skyblue;
+    top: 350px;
+    left: 160px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.drop4{
+    position: absolute;
+    background: skyblue;
+    top: 400px;
+    left: 60px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.drop5{
+    position: absolute;
+    background: skyblue;
+    top: 400px;
+    left: 100px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.drop6{
+    position: absolute;
+    background: skyblue;
+    top: 350px;
+    left: 40px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.drop7{
+    position: absolute;
+    background: skyblue;
+    top: 400px;
+    left: 140px;
+    width: 20px;
+    height: 50px;
+    z-index: 100;
+    border-radius:  40% ;
+
+}
+.currenttemp{
+    position: absolute;
+    transform: rotate(-12deg);
+    top : 60px ;
+    left: 200px;
+    font-size: 7rem;
+    z-index: -1;
+    background-color: rgb(238, 10, 86) ;
+}
+.min_max{
+    transform: rotate(-12deg);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    background-color: rgb(238, 10, 86) ;
+}
+.today{
+    padding-left: 10px;
+    transform: rotate(-12deg);
+    position: absolute;
+    top: 300px;
+    left: 410px;
+    width: 100px;
+    height: 100px;
+    transform: skew(20deg);
+    background-color: pink;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.yesterday{
+    padding-left: 10px;
+    transform: rotate(-12deg);
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+    transform: skew(20deg);
+    background-color: gray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.tomorrow{
+    padding-left: 10px;
+    transform: rotate(-12deg);
+    position: absolute;
+    top: 300px;
+    left: 520px;
+    width: 100px;
+    height: 100px;
+    transform: skew(20deg);
+    background-color: gray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+.sunline{
+    position: absolute;
+    top: 400px;
+    left: 130px;
+    width: 800px;
+    height: 500px;
+    border: dotted 2px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.bi-sunrise{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    font-size: 2rem;
+}
+.bi-sunrise:hover{
+    background-color: black;
+}
+.bi-sunset{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    font-size: 2rem;
+}
+.bi-sunset:hover{
+    background-color: black;
+}
+.suntime{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    font-size: 2rem;
+    
+}
+.bi-suntime:hover{
+    background-color: black;
+}
+.allinfo{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    border: solid 5px black;
+    z-index: -50px;
+    left: 120px;
+    padding: 100px;
+}
+.e{
+    padding: 30px;
+    font-size: 3rem;
+}
